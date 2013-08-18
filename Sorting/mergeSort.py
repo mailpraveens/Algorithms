@@ -1,3 +1,5 @@
+#To run just type python mergeSort.py in the terminal, you can change the input at the last line of this file
+
 # This is written after refering the CLRS book and hints from the site http://en.literateprograms.org/Merge_sort_(Python)
 
 #The merge method takes in the two subarrays and creates a output array
