@@ -5,7 +5,7 @@ def merge(left, right):
 	result = []
 	i , j = 0 , 0
 	while i < len (left) and j < len (right): # iterate through both arrays and arrange the elements in sorted order
-		if left[i] < right [j]:
+		if left[i] <= right [j]:
 			result.append(left[i])
 			i+=1
 		else:
@@ -24,7 +24,7 @@ def mergesort(lst):
 		return lst
 	middle = int(len(lst) / 2)
 	left = mergesort(lst[:middle])
-	right = mergesort(lst(middle+1:))
+	right = mergesort(lst[middle:])
 	return merge(left, right)
 
 
